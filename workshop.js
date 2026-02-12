@@ -63,11 +63,11 @@ const AGENDA = [
     type: "TECH",
     startISO: "2026-03-12T13:45:00-04:00",
     title: "Technical Session Part I",
-    speakers: ["Amirhossein Ansari", "Sonal", "Zhuoxin Zhan"],
+    speakers: ["Amirhossein Ansari", "Sonal Allana", "Zhuoxin Zhan"],
     mode: "Hybrid",
     details:
       "• Out-of-Distribution Detection for Trustworthy Machine Learning — Amirhossein Ansari\n" +
-      "• Privacy Enhancing Technologies in Explainable AI (Sonal)\n" +
+      "• Privacy Enhancing Technologies for Explainable AI — Sonal Allana\n" +
       "• Adversarial Robustness for Trustworthy Machine Learning — Zhuoxin Zhan"
   },
   {
@@ -149,10 +149,16 @@ const SPEAKERS = [
       "Keywords: Out-of-Distribution Detection, Trustworthy Machine Learning, Classification"
   },
   {
-    name: "Sonal",
-    role: "Technical Talk Presenter",
-    talk: "Towards integration of privacy enhancing technologies in Explainable AI",
-    abstract: "Abstract details pending."
+    group: "SPEAKER",
+    name: "Sonal Allana",
+    org: "University of Guelph",
+    role: "PhD Candidate / Presenter",
+    photo: "assets/people/sonal-allana.jpg",
+    links: [
+      { label: "Scholar", url: "https://scholar.google.com/citations?hl=en&user=XRSx8pcAAAAJ" },
+      { label: "UofG Seminar", url: "https://www.uoguelph.ca/computing/event/sonal-allana-phd-seminar-1" }
+    ],
+    bio: "Sonal Allana is a PhD Candidate at the Data Management and Privacy Governance Lab at the University of Guelph. She is strongly interested in the ethical aspects of technology and its impact on society. Her current research area is at the intersection of privacy and explainability in artificial intelligence systems. She has previously worked in creating a safety framework for children’s IoT in collaboration with industry. Sonal is dedicated to student-centred learning and has extensive teaching experience in undergraduate and graduate courses in computer science and engineering. She has also worked in the industry as a software engineer and project lead, managing cross-functional teams in the successful delivery of high-value solutions."
   },
   {
     name: "Zhuoxin Zhan",
@@ -229,7 +235,11 @@ const PEOPLE = [
     org: "Simon Fraser University (SFU)",
     role: "Organizer",
     photo: "assets/people/ke-wang.jpg",
-    links: [{ label: "Bio", url: "https://example.com/bio" }]
+    links: [
+      { label: "Profile", url: "https://www.sfu.ca/fas/computing/people/faculty/faculty-members/wangk.html" },
+      { label: "Bio", url: "https://www.cs.sfu.ca/~wangk/resume.html" }
+    ],
+    bio: "Ke Wang received Ph.D from Georgia Institute of Technology. He is currently a professor at School of Computing Science, Simon Fraser University. Ke Wang's research interests include database technology, data mining and knowledge discovery, with emphasis on massive datasets, graph and network data, and data privacy. He is particularly interested in combining the strengths of database, statistics, machine learning and optimization to provide actionable solutions to real life problems and industrial applications. Ke Wang has published in database, information retrieval, and data mining conferences, including SIGMOD, SIGIR, PODS, VLDB, ICDE, EDBT, SIGKDD, SDM, ICDM, WWW, AAAI, and CIKM. He co-authored a book \"Introduction to Privacy-Preserving Data Publishing: Concepts and Techniques\", Data Mining and Knowledge Discovery Series, Chapman & Hall/CRC, August 2010. He was an associate editor of the ACM TKDD journal, associate editor of the IEEE TKDE journal, an editorial board member for Journal of Data Mining and Knowledge Discovery. He has been the general co-chair for the SIAM Conference on Data Mining 2015 and 2016, and the PC co-chair for SIAM Conference on Data Mining 2008 and the PC co-chair for IEEE International Conference on Intelligence and Security Informatics (ISI) 2010."
   },
   {
     group: "ORGANIZER",
@@ -259,13 +269,10 @@ const PEOPLE = [
     bio: "Amirhossein Ansari is a PhD student in the School of Computing Science at Simon Fraser University (SFU), supervised by Prof. Ke Wang. His research focuses on Trustworthy Artificial Intelligence, with a particular emphasis on Out-of-Distribution (OOD) detection and robustness in machine learning models. His work aims to develop reliable models that can recognize and appropriately handle inputs that differ from their training data, improving safety and reliability in real-world deployments."
   },
   {
-    group: "ORGANIZER",
-    name: "Sonal",
-    org: "University of Guelph(UOG)",
-    role: "Organizer",
-    photo: "assets/people/sonal.jpg",
-    links: [{ label: "Bio", url: "https://www.linkedin.com/in/sonal/" }],
-    bio: "TBD"
+    name: "Sonal Allana",
+    role: "PhD Candidate, Data Management and Privacy Governance Lab (University of Guelph)",
+    talk: "Privacy Enhancing Technologies for Explainable AI",
+    abstract: "Explainability is a pillar of Trustworthy AI and crucial for transparency of black-box decisionmaking systems. However, recent research has shown that explainability in the form of Explainable AI (XAI) methods can expose the privacy of the underlying data and the confidentiality of models. To address this concern, in this workshop we investigate the use of Privacy Enhancing Technologies (PETs) as a defense mechanism against a privacy attack that exploits explanations generated by feature-based XAI methods. We present the results of empirical evaluation of three types of PETs, namely, synthetic training data, differentially private training and noise addition, across two categories of feature-based XAI. Our findings reveal varying levels of effectiveness among the mitigation strategies, as well as trade-offs between privacy, utility, and system performance. Based on our evaluation, we propose strategies for effectively integrating PETs into XAI to maximize privacy protection and minimize the risk of sensitive information leakage."
   },
   {
     group: "SPEAKER",
@@ -843,3 +850,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initToTop();
   initBingo();
 });
+
+
